@@ -1,0 +1,65 @@
+ <!--pages/user/user.wxml-->
+<view class="user">
+  <view class="user-info">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">用户登陆</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+  </view>
+  <view class="user-list">
+    <!-- <navigator url="../editUser/message" open-type='navigate'> -->
+      <view class='user-list-item'>
+        <text class='number'>当前身份： <text>受访人员</text></text>
+      </view>
+    <!-- </navigator> -->
+  </view>
+
+  <view class="user-list">
+   <!-- <navigator url="../editUser/number" open-type='navigate'> -->
+      <view class='user-list-item' bindtap="clicknumber">
+        <text class='number' >编辑手机号</text>
+	
+<view class="modal-mask" catchtap="hideModal"  wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">	
+ <view class='modaleclass'>
+	<form bindsubmit="formSubmit" bindreset="formReset">
+	<input name="mobile" placeholder="{{phones}}"  class="phone" maxlength='11'value="" bindinput ="mobileInput" type='number'></input>
+	<button formType="submit" bindtap= "mobileChange">更改手机号</button>
+	</form>
+ </view>
+</view>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+  <!--  </navigator> -->
+  </view>
+    <view class="user-list">
+    <navigator url="../invite/invite" open-type='navigate'>
+      <view class='user-list-item'>
+        <text class='number'>邀请</text>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+    </navigator>
+  </view>
+
+<view class="user-list">
+    <navigator url="../editUser/history" open-type='navigate'>
+      <view class='user-list-item'>
+        <text class='number'>历史访客</text>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="user-list">
+    <navigator url="../editUser/message" open-type='navigate'>
+      <view class='user-list-item'>
+        <text class='number'>消息通知</text>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+    </navigator>
+  </view>
+
+
+</view>
+

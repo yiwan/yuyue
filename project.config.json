@@ -1,0 +1,186 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wx78ccddbf0469c888",
+	"projectname": "%E5%8F%97%E8%AE%BF",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/logs/logs",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/people/people",
+					"pathName": "pages/people/people",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "message",
+					"pathName": "pages/editUser/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phone",
+					"pathName": "pages/editUser/number",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "invite",
+					"pathName": "pages/invite/invite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/work/work",
+					"pathName": "pages/work/work",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "people",
+					"pathName": "pages/people/people",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "people",
+					"pathName": "pages/people/people",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/editUser/number",
+					"pathName": "pages/editUser/number",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/work",
+					"pathName": "pages/work/work",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "pages/person/person",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/type/shenhe",
+					"pathName": "pages/type/shenhe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "yuyue",
+					"pathName": "pages/type/yuyue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index",
+					"pathName": "pages/index/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

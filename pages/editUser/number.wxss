@@ -1,0 +1,2 @@
+/* pages/editUser/number.wxss */
+.phoneInput{width: 98%;height: 100rpx;border: 1px solid #eee;padding-left: 10rpx}

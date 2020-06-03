@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "已同意列表",
+  "usingComponents": {
+	  "noData":"/Componet/zanwu/zanwu"
+  }
+}

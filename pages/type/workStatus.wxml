@@ -1,0 +1,10 @@
+<!--pages/type/shenhe.wxml-->
+<view wx:for="{{arr}}" wx:key="{{index}}" class="interview">
+	<view data-index='{{index}}'>
+		<view>预约人：{{item.name}}</view>
+		<!-- <view>受访人：{{item.visit_name}}</view> -->
+		<view>时\t间：{{item.time}}</view>
+		<view>状\t态：<text>{{item.status}}</text></view>
+	</view>
+	
+</view>

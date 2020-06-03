@@ -1,0 +1,90 @@
+<view class='index'>
+	<swiper class="index-swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+		<block wx:for="{{imgUrls}}" wx:key="{{index}}" wx:for-index="index" wx:for-item="item">
+			<swiper-item>
+				<view class="swiper-item {{item}}">
+					<image wx:if="{{item.banner_img}}" src="https://subscribe.huituhb.com/uploads/{{item.banner_img}}" class="slide-image"  ></image>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="functional-module">
+		<ul>
+			<li class='type' bindtap='yuyueBtn'>
+			  <image class="pic" src="../../image/status/yuyue.png"></image>
+			  <view>预约</view>
+			</li>
+			<li class='type' bindtap='shenheBtn' data-id="{{0}}">
+				<image class="pic" src="../../image/status/shenhe.png"></image>
+				<view>待审核</view>
+			</li>
+			<li class='type' bindtap='passBtn' data-id="{{1}}">
+				<image class="pic" src="../../image/status/pass.png"></image>
+				<view>已通过</view>
+			</li>
+			<li class='type'  bindtap='jujueBtn' data-id="{{2}}">
+				<image class="pic" src="../../image/status/refuse.png"></image>
+				<view>已拒绝</view>
+			</li>
+			<li class='type' bindtap='tongguoBtn' data-id="{{2}}">
+				<image class="pic" src="../../image/status/loading.png"></image>
+				<view>进行中</view>
+			</li>
+			<li class='type'  bindtap='jujueBtn' data-id="{{3}}">
+				<image class="pic" src="../../image/status/over.png"></image>
+				<view>已结束</view>
+			</li>
+			
+			<view style="height: 1px;clear: both;"></view>
+		</ul>
+	</view>
+ 	<view class="items">
+ 		<view wx:for="{{arrays}}" wx:key="{{index}}" class="item">
+ 			<view class="inner txt">
+ 				<view class='invite'>会议名称：{{item.meeting_name}}
+				<button bindtap='outClick' class='agree'id="{{item.id}}" >查看</button>
+			</view>
+ 				<view class='invite'>开始时间：{{item.start_date}}</view> 
+				<view class='invite' >是否预约：{{item.subscribe_state == 0?'未申请':'已申请'}}</view>
+ 			</view>
+ 		</view>
+ 	</view>
+	
+	<view class='invite-list' wx:for="{{subList}}" wx:key="{{index}}">
+	
+		<view class="inner txt">
+			<view class='other' style="width: 100%;">
+				
+				<view class='invite'>
+					<text class="popular">受访</text>{{item.name}}
+				</view>
+				
+				<view class='invite phones'>手机号：{{item.mobile}}</view>
+				<view class="invite ">{{item.visit_note}}</view>
+				<view class="invite ">{{item.newvisit_time}}至{{item.newend_time}}</view>
+				<view style="display: flex;margin-top: 10px;">
+					<button bindtap='refuseClick' class='refuse' data-index1='{{index}}' id="{{item.id}}" style="margin-left: 54%;">拒绝</button>
+					<button bindtap='agreeClick' class='agree' data-index1='{{index}}' id="{{item.id}}" >同意</button>
+				</view>
+			</view> 
+		</view>		
+	</view>
+	<noData>
+	  <view bindtap='a'>暂无更多数据</view>
+	</noData>
+ <!-- 底部 -->
+	<view class="footer">
+		<ul>
+			<li bindtap="indexBtn">
+				<text class="iconfont icon-shouyex"></text>
+				<text>首页</text>
+ 			</li>
+ 			<li bindtap="userConBtn">
+ 				<text class="iconfont icon-gerenzhongxin"></text>
+ 				<text>我的</text>
+ 			</li>			
+ 		</ul>
+ 	 </view> 
+  </view>
+
+

@@ -1,0 +1,61 @@
+ <!--pages/user/user.wxml-->
+<view class="user">
+  <view class="user-info">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">用户登陆</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+  </view>
+  <view class="user-list">
+    <!-- <navigator url="../editUser/message" open-type='navigate'> -->
+      <view class='user-list-item'>
+        <text class='number'>当前身份： <text>普通访客</text></text>
+      </view>
+    <!-- </navigator> -->
+  </view>
+  <view class="user-list">
+    <navigator url="../editUser/number" open-type='navigate'>
+      <view class='user-list-item'>
+        <text class='number'>编辑手机号</text>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+    </navigator>
+  </view>
+
+
+  <view class="user-list">
+    <navigator url="../editUser/message" open-type='navigate'>
+      <view class='user-list-item'>
+        <text class='number'>消息通知</text>
+        <text class='iconfont icon-fanhui'></text>
+      </view>
+    </navigator>
+  </view>
+  
+  <view class="user-list">
+	<view class="view">
+	  <button class="button-hover" type="primary" bindtap="scan" id="scan">
+		  <text class='number'>扫一扫</text>
+		  <text  class='iconfont icon-fanhui'></text>
+	  </button>
+	</view>
+  </view>	
+
+  
+<!-- 底部 -->
+		 <view class="footer">
+			<ul>
+				<li bindtap="indexBtn">
+					<text class="iconfont icon-shouyex"></text>
+					<text>首页</text>
+				</li>
+				<li bindtap="userConBtn">
+					<text class="iconfont icon-gerenzhongxin"></text>
+					<text>我的</text>
+				</li>			
+			</ul>
+		 </view>
+
+</view>
+

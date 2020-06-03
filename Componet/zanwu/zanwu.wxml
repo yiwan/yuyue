@@ -1,0 +1,6 @@
+	<!--components/noData/noData.wxml-->
+
+<view class="noData">
+  <!-- <image src="/images/404.png" mode="widthFix" class="noDataImg"></image> -->
+  <slot></slot>
+</view>

@@ -1,0 +1,229 @@
+page{
+  background-color: #eee
+}
+
+.index-swiper{margin: 20rpx;height:300rpx;border-radius: 10rpx}
+.index-swiper image{ width:100%;height:300rpx;border-radius: 10rpx;overflow: hidden }
+.index-text{width: 100%;height: 70rpx;display:flex;align-items: center;justify-content: center;background-color: white}
+
+.change-time{
+  color: #07c160;
+}
+.pic{
+	width:1.5rem;
+	height: 1.5rem;
+}
+
+.tui-picker-name{
+  height: 100rpx;
+  width: 95%;
+  /* line-height: 80rpx; */
+  background-color: #07c160
+}
+
+.changeTime{
+  height: 100rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  height: 100rpx;
+  width: 95%;
+  line-height: 80rpx;
+  border: 1px dashed #86de46;
+  background-color: #ffffff;
+  font-size: 35rpx;
+  padding: 0 10px;
+  overflow: hidden;
+  display: flex;
+  color: #000;
+  padding-top:10rpx;
+  
+}
+.dateTime{
+  width: 70%;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* border:1px solid #86de46; */
+  /* text-align: center; */
+}
+
+
+.section{
+ margin-top: 5rpx;
+   height: 80rpx;
+  width: 95%;
+  line-height: 80rpx;
+  border: 1px dashed #fff;
+  background-color: #fff;
+  font-size: 35rpx;
+  padding: 0 10px;
+  overflow: hidden;
+  display: flex;
+  color: #00CCFF;
+  padding-top:10rpx
+  }
+  .on{display: block}
+  .off{display: none}
+  
+.btu button{
+  width: 100%;
+  background-color: #07c160;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+.txt{
+  width: 96.5%;
+  min-height:100rpx;
+  border: 1px dashed #86de46;
+  color: #000;
+  padding-left: 20rpx ;
+  background-color: white;
+  margin-bottom: 5px
+}
+.invite{
+  display: flex;
+  width: 90%;
+  margin-bottom: 10rpx
+
+}
+.agree{
+  height: 50rpx;
+  background-color: #03a9f4;
+  color: white;
+  line-height: 50rpx;
+  /* margin-left: 10rpx; */
+  margin-right: 1rpx;
+  margin-top: 5rpx
+}
+.refuse{
+  height: 50rpx;
+   background-color: #fff;
+  color: #07c160;
+  line-height: 50rpx;
+  margin-right: 1rpx
+}
+.picker_one{
+	width: 100%;
+	height: 100rpx;
+	background-color: white;
+	display: flex;
+	border: 1px solid #86de46;
+}
+.picker{
+	width:473rpx;
+	font-size: 35rpx;
+	/* text-align: center; */
+	line-height: 100rpx;
+	margin-left: 4%;
+}
+
+
+
+.footer{
+	background-color: #03a9f4;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 3.125rem;	
+}
+.footer ul{
+	width: 100%;
+	height: 3.125rem;
+	display: flex;
+}
+.footer ul li{
+	width: 50%;
+	text-align: center;
+	height: 3.125rem;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	color: #ffffff;
+}
+.footer ul li text:first-child{
+	font-size: 1.25rem;
+	display: inline-block;
+	width: 100%;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	padding-top: 0.3125rem;
+}
+.footer ul li text:last-child{
+	font-size: 0.75rem;
+	display: inline-block;
+	width: 100%;
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+}
+.invite-list{
+	margin-bottom: 3.75rem;
+}
+.tab {
+	float: left;
+	width: 20%;
+	text-align: center;
+	background-color: #ffffff;
+	line-height: 3.125rem;
+	height: 3.125rem;
+}
+ 
+.topTabSwiper {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+.tabBorer {
+  border-bottom: 1px solid #f00;
+  color: #f00;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+.functional-module{
+	width: 99.5%;
+	height: 150rpx;
+	background-color: white;
+	/* border: 1px dashed #07c160; */
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.functional-module ul{
+	width: 100%;
+	display: flex;
+}
+.type{
+  width: 33%;
+  height: 100rpx;
+  /* display: flex; */
+  text-align: center;
+  margin-bottom: 0.625rem;
+  margin-top: 23rpx;
+}
+.type view:first-child{
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 30px;
+}
+.type view:last-child{
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 16px;
+  text-align: center;
+}

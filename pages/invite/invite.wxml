@@ -1,0 +1,35 @@
+<view class="invite">
+	        <view class='search'>
+	            <input type='text' placeholder='输入想要邀请的姓名' confirm-type='search'  bindinput='inputBind' data-id="{inputValue}" bindconfirm='query'></input>
+	 		</view>
+			<view class="inviteList" wx:for='{{list}}' wx:key='{{index}}'>
+				<view>姓\t名：{{item.name}}</view>
+				<view class="phone">手机号：{{item.mobile}} </view>
+				 <view style="width: 100%;height: 100rpx;display: flex;border-bottom: 1px solid #ccc;">
+				 	<text style="width: 30%;line-height: 100rpx;">开始时间：</text>
+				 	  <pickers id="pickers" value='{{item.time}}' data-index1='{{index}}' data-time='{{item}}' bind:onPickerChange="bindDateChange1" >
+						 <view class="picker">
+						       当前选择: {{item.time}}
+						     </view>
+				 	  </pickers>
+				 </view>
+				 <view style="width: 100%;height: 100rpx;display: flex;border-bottom: 1px solid #ccc;">
+				 	<text style="width: 30%;line-height: 100rpx;">结束时间：</text>
+					<pickers id="pickers" value='{{item.time}}' data-index1='{{index}}' data-time='{{item}}' bind:onPickerChange="bindDateChange2" >
+				 			<view class="picker">
+				 				当前选择: {{item.time}}
+				 			</view>
+					</pickers>
+				 </view>
+				 <view class="page-section">
+				   <view class="page-section-title">备注：</view>
+				   <view class="textarea-wrp">
+				     <textarea value="{{item.note}}"  bindinput="bindTextAreaBlur" auto-height placeholder="请输入预约详情"></textarea>
+				   </view>
+				 </view>
+				 <button bindtap='yaoqing'  data-index='{{item.id}}'> 邀请</button>
+			</view>
+</view>
+		
+	
+

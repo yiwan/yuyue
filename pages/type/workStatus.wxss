@@ -1,0 +1,17 @@
+/* pages/type/workStatus.wxss */
+page{
+	background-color: #eeeeee;
+}
+.interview{
+	width: 91%;
+	min-height: 200rpx;
+	background-color: #ffffff;
+	border: 1px dashed #03a9f4;
+	margin-bottom: 8px;
+	line-height: 70rpx;
+	padding-left: 10px;
+	border-radius: 10px;
+	box-shadow: 4px 5px 10px #ccc;
+	margin-top: 5px;
+	margin-left: 3%;
+}

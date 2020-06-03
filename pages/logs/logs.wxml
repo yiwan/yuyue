@@ -1,0 +1,59 @@
+<!--logs.wxml-->
+<view>
+	<view>
+	 <image class='img' src='/image/chuli.jpg'></image>
+	</view>
+	<view class="functional-module">
+		<ul>
+			<li bindtap="agreePage">
+				<image class="pic" src="../../image/status/pass.png"></image>
+				<view>已通过</view>
+			</li>
+			<li bindtap="refusePage">
+				<image class="pic" src="../../image/status/refuse.png"></image>
+				<view>已拒绝</view>
+			</li>
+			<li bindtap="agreeOut">
+				<image class="pic" src="../../image/status/qianli.png"></image>
+				<view>待签离</view>
+			</li>
+			<li bindtap="afterout">
+				<image class="pic" src="../../image/status/qiandao.png"></image>
+				<view>已签离</view>
+			</li>
+			<li bindtap='shixiaoBtn' >
+			 <image class="pic" src="../../image/status/shixiao.png"></image>
+			  <view>已失效</view>
+			</li>
+			<view style="height: 1px;clear: both;"></view>
+		</ul>
+	</view>
+	<view class="listYuyue">预约列表</view>
+	<view class='invite-list' wx:for="{{subscribeList0}}" wx:key="{{index}}">
+	
+		<view class="inner txt">
+			<view class='other' style="width: 100%;">
+				
+				<view class='invite'>
+					<text class="popular">普通</text>{{item.visit_name}}
+				</view>
+				
+				<view class='invite phones'>手机号：{{item.visit_mobile}}</view>
+				<view class="invite ">预约备注：{{item.visit_note}}</view>
+				<view class="invite ">{{item.visit_time}}至{{item.end_time}}</view>
+				<view style="display: flex;margin-top: 10px;">
+					<button bindtap='refuseClick' class='refuse' data-index1='{{index}}' id="{{item.id}}" style="margin-left: 54%;">拒绝</button>
+					<button bindtap='agreeClick' class='agree' data-index1='{{index}}' id="{{item.id}}" >同意</button>
+				</view>
+			</view> 
+		</view>	
+				<!--pages/index/loan/loan.wxml-->
+			
+			
+
+	</view>
+	<noData>
+	  <view bindtap='a'>暂无更多数据</view>
+	</noData>
+
+</view>

@@ -1,0 +1,55 @@
+/* pages/register/register.wxss */
+@import '../../model/model.wxss';
+
+.userinfo{
+	width: 100%;
+	height: 250rpx;
+	background-color: hotpink
+	}
+.userinfo button{
+	background-color: #1AE6BD;
+	color: white
+	}
+.userinfo-avatar{
+	width: 30%;
+	height: 200rpx;
+	border-radius: 50%
+	}
+.section{margin-left:10%;display: flex;width: 100%;height: 100rpx;align-items: center;font-size: 16px;}
+.section input{width: 70%;height: 80rpx;border: 1px solid #ccc;margin-left: 20rpx}
+.btn-right{
+	width: 80%;
+	background-color: #03a9f4;
+	color: white;
+	font-size: 16px;
+	margin-top: 10rpx;
+	
+}
+.change{
+	width: 100%;
+}
+.picker_one{
+	width: 100%;
+	text-align: center;
+	line-height: 100rpx;
+}
+.word{
+	width: 100%;
+	height: 200rpx;
+	line-height: 200rpx;
+	text-align: center;
+	color: #03a9f4;
+	font-size: 25px;
+	font-weight: bold;}
+	
+.popular{
+	width: 100%;
+	min-height: 100rpx;
+	font-size: 28rpx;
+	color: #ccc;
+	text-align: center;
+	margin-top: 66rpx;
+}
+	
+	
+	

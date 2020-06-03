@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "绑定个人信息",
+  "usingComponents": {
+    "Select": "/Componet/select/select",
+	"mp-form":"/Componet/form/form",
+	"mp-toptips": "/Componet/toptips/toptips",
+	    "mp-cells": "/Componet/cells/cells",
+	    "mp-cell": "/Componet/cell/cell",
+	    "mp-checkbox": "/Componet/checkbox/checkbox",
+	    "mp-checkbox-group": "/Componet/checkbox-group/checkbox-group"
+  }
+}

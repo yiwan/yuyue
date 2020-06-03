@@ -1,0 +1,3 @@
+/* pages/editUser/message.wxss */
+.people{width: 100%;min-height: 200rpx;border-bottom: 5rpx solid skyblue;margin-bottom: 5rpx;background-color: skyblue;}
+.people text{color:white;font-size: 18px}

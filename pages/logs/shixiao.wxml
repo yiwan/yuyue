@@ -1,0 +1,16 @@
+<view>
+	
+	<view class='invite-list' wx:for="{{subscribeList0}}" wx:key="{{index}}">
+		<view class="inner txt">
+			<view class='other' >
+				<view class='invite'>来访人姓名：{{item.visit_name}}</view>
+				<view class='invite phones'>手机号：{{item.visit_mobile}}</view>
+				<view class='invite'>开始时间：{{item.newvisit_time}}</view>
+				<view class='invite'>结束时间：{{item.newend_time}}</view>
+			</view> 
+		</view>		
+	</view>
+	<noData>
+	  <view bindtap='a'>暂无更多数据</view>
+	</noData>
+</view>

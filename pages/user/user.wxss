@@ -1,0 +1,57 @@
+/* pages/user/user.wxss */
+page{background-color: #eee}
+.user-info{height: 150rpx;display: flex;align-items: center;background-color: white}
+.user-info image{width: 100rpx;height: 100rpx;border-radius: 50%;overflow: hidden;margin-left: 45rpx}
+.user-info text{margin-left: 10rpx}
+.user-info button{margin: 0;width: 232rpx;font-size: 14px;font-weight: normal;background-color:#07c160;margin-left: 10rpx;color: white }
+.user-list-item{height: 100rpx;display: flex;align-items: center;justify-content: space-between;background-color: white;margin-top: 10px;font-size:16px}
+.number{margin-left: 16rpx}
+.icon-fanhui{margin-right: 10rpx}
+.userinfo-nickname {
+  color: #000;
+
+}
+
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+}
+ .modaleclass{
+	 width:500rpx;
+	 height:250rpx;
+	 background-color:#fff;
+ }
+ .modaleclass input{
+	 width: 100%;
+	 height: 100rpx;
+	 text-align: center;
+	 border: 1px solid #ccc;
+	 margin-top: 10px;
+ }
+ .modaleclass button{
+	 width: 50%;
+	 height: 80rpx;
+	 background-color: #03a9f4;
+	 color: white;
+	 margin-top: 50rpx;
+ }
+.modal-dialog {
+  overflow: hidden;
+  position: fixed;
+  top: 30%;
+  background: #f9f9f9;
+  margin: -110rpx 105rpx;
+
+}
+
+image{
+	width: 6.25rem;
+	height: 6.25rem;
+	border-radius: 50%;
+	}

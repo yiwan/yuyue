@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view>
+	<view class='invite-list' wx:for="{{subscribeList0}}" wx:key="{{index}}">
+		<view class="inner txt">
+			<view class='other' >
+				<view class='invite'>来访人姓名：{{item.visit_name}}</view>
+				<view class='invite phones'>手机号：{{item.visit_mobile}}</view>
+				<view class='invite'>{{item.visit_time}}\t至\t{{item.end_time}}</view>
+			</view> 
+		</view>		
+	</view>
+	<noData>
+	  <view bindtap='a'>暂无更多数据</view>
+	</noData>
+</view>

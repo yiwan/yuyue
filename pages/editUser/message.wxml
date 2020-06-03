@@ -1,0 +1,21 @@
+<!--pages/editUser/message.wxml-->
+<view>
+   <view class='people'>
+      <view class='name'>
+          <text>姓<text style='color:skyblue'>啦啦</text>名：</text>
+          <text>{{name}}</text>
+      </view>
+      <view class='first'>
+          <text>类<text style='color:skyblue'>啦啦</text>型：</text>
+          <text>{{mold}}</text>
+      </view>
+      <view class='second'>
+          <text>会<text style='color:skyblue'>啦啦</text>议：</text>
+          <text>{{meeting}}</text>
+      </view>
+      <view class='order'>
+          <text>预约进程：</text>
+          <text>待处理</text>
+      </view>
+  </view>
+</view>

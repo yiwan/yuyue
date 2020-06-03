@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "邀请",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+	    "pickers": "/Componet/pickerYMDHM/pickerYMDHM"
+  }
+}

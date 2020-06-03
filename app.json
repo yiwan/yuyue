@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/editUser/number",
+    "pages/editUser/history",
+    "pages/editUser/message",
+    "pages/invite/invite",
+    "pages/register/register",
+    "pages/people/people",
+    "pages/work/work",
+    "pages/person/person",
+    "pages/editUser/own",
+    "pages/type/yuyue",
+    "pages/type/shenhe",
+    "pages/type/tongguo",
+    "pages/worker/worker",
+    "pages/news/news",
+    "pages/logs/shixiao",
+    "pages/type/workYuyue",
+    "pages/type/workStatus",
+    "Componet/zanwu/zanwu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#03a9f4",
+    "navigationBarTitleText": "访客系统",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#03a9f4",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "首页",
+        "iconPath": "image/s1.png",
+        "selectedIconPath": "image/s2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "image/g1.png",
+        "selectedIconPath": "image/g2.png"
+      }
+    ]
+  }
+}

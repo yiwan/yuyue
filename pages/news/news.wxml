@@ -1,0 +1,12 @@
+<!--pages/news/news.wxml-->
+	<view class="items">
+ 		<view class="item">
+ 			<view class="inner txt">
+				<view class='invite'><text>会议名称：</text>{{arrays.meeting_name}}</view>
+ 				<view class='invite'><text>开始时间：</text>{{arrays.start_date}}</view> 
+				<view class="invite"><text>结束时间：</text>{{arrays.end_date}}</view>
+				<view class="meeting"><text>会议简介：</text>{{arrays.meeting_content}}</view>
+ 			</view>
+			<button bindtap='outClick' class='agree'id="{{item.id}}" >申请</button>
+ 		</view>
+ 	</view>

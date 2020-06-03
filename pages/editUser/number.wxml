@@ -1,0 +1,17 @@
+<!--pages/editUser/number.wxml-->
+<view style="height: 100rpx;color: #03a9f4;line-height: 100rpx;">
+	<text>修改单位：</text>
+</view>
+ <form bindsubmit="formSubmit" bindreset="formReset">
+	<view class="page-section">
+	    <view class="textarea-wrp">
+	      <textarea value="{{units}}" bindblur="bindComeAreaBlur" auto-height placeholder="请输入修改单位信息"></textarea>
+	    </view>
+	  </view>
+	 <view class="phone" style="color: #03a9f4;">
+		 <text style="height: 100rpx;color: #03a9f4;display: block;line-height: 100rpx;">修改手机号：</text>
+		 <input class="phoneInput" name="mobile"maxlength='11'value="" bindinput ="mobileInput" type='number'>{{phone}}</input>
+	 </view>
+
+<button formType="submit" bindtap= "mobileChange" style="background-color: #03a9f4;color: white;">提交修改信息</button>
+</form>

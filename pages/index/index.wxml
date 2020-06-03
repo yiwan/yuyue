@@ -1,0 +1,19 @@
+
+<view style="text-align: center;">
+	<image style="width: 200px;height: 200px;text-align: center;margin-top: 100px;" src="https://subscribe.huituhb.com/uploads/{{imgurl}}"></image>
+</view>
+<view style="text-align: center;color: #03a9f4;">
+	<text class="welcome">{{text}}</text>
+</view>
+
+<view wx:if="{{canIUse}}">
+ <view class="user-info">
+      <block>
+        <image style="display: none;"  bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		<!-- <button bindtap="loginBtn"></button> -->
+      </block>
+  </view>
+
+ <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="btu">微信授权登陆</button>
+</view>

@@ -1,0 +1,51 @@
+
+.welcome{
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	height: 100px;
+	font-size: 26px;
+	font-weight: bold;
+	
+}
+.user-info{height: 150rpx;}
+.user-info image{width: 100rpx;height: 100rpx;border-radius: 50%;overflow: hidden;margin-left: 45rpx}
+.user-info text{margin-left: 10rpx}
+.header {
+ margin: 90rpx 0 90rpx 50rpx;
+ border-bottom: 1px solid #ccc;
+ text-align: center;
+ width: 650rpx;
+ height: 300rpx;
+ line-height: 450rpx;
+}
+ .userinfo-nickname{
+	 color: white;
+ }
+.header image {
+ width: 200rpx;
+ height: 200rpx;
+}
+ 
+.content {
+ margin-left: 50rpx;
+ margin-bottom: 90rpx;
+}
+ 
+.content text {
+ display: block;
+ color: #9d9d9d;
+ margin-top: 40rpx;
+}
+ 
+.bottom {
+ border-radius: 80rpx;
+ margin: 70rpx 50rpx;
+ font-size: 35rpx;
+}
+.btu{
+	width: 70%;
+	height: 100rpx;
+	background-color: #03a9f4;
+	color: white;
+}

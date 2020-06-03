@@ -1,0 +1,152 @@
+page{background-color: #eee}
+.img{width: 100%;display: block;height: 400rpx;margin-bottom: 10rpx}
+.section{
+ margin-top: 5rpx;
+   height: 80rpx;
+  width: 95%;
+  line-height: 80rpx;
+  border: 1px dashed #00CCFF;
+  background-color: #fff;
+  font-size: 35rpx;
+  padding: 0 10px;
+  overflow: hidden;
+  display: flex;
+  color: #00CCFF;
+  padding-top:10rpx
+  }
+  .on{display: block}
+  .off{display: none}
+  
+.btu button{
+  width: 100%;
+  background-color: #00CCFF;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 10px
+}
+.txt{
+  width: 96.5%;
+  min-height:100rpx;
+  border: 1px dashed #86de46;
+  color: #000;
+  padding-left: 20rpx ;
+  margin-bottom: 10rpx;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex
+}
+.invite{
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  margin-left: 10rpx
+
+}
+.phones{
+  line-height: 50rpx
+}
+.agree{
+  height: 50rpx;
+  background-color: #07c160;
+  color: white;
+  line-height: 50rpx;
+  margin-right: 11rpx;
+}
+.refuse{
+  height: 50rpx;
+   background-color: #ffffff;
+  color: #07c160;
+  line-height: 50rpx;
+  margin-left: 95rpx;
+}
+
+.pic{
+  width: 25%;
+  height: 150rpx
+}
+
+/* 搜索框 */
+.search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width:100%;
+  height:100rpx;
+  background-color:white;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border:1px solid #07c160;
+  border-radius: 5px;
+
+}
+.search input
+{
+  font-size:16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left:30rpx; 
+}
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-right:20rpx;
+}
+.tab{
+  float: left;
+  width: 33.3333333%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ffffff;
+}
+.topTabSwiper {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+} 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+} 
+.tabBorer {
+  border-bottom: 1px solid #86de46;
+  color: #86de46;
+} 
+.swiper {
+  width: 100%;
+} 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  padding: 80rpx 0;
+}
+.functional-module{
+	width: 100%;
+}
+.functional-module ul{
+	width: 100%;
+}
+.functional-module ul li{
+	width: 25%;
+	height: 3.75rem;
+	float: left;
+	margin-bottom: 0.625rem;	
+}
+.functional-module ul li view:first-child{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	font-size: 1.5625rem;
+	border-radius: 50%;
+	
+}
+.functional-module ul li view:last-child{
+	height: 1.25rem;
+	line-height: 1.25rem;
+	font-size: 0.75rem;
+	width: 100%;
+	text-align: center;
+}

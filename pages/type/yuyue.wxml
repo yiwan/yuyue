@@ -1,0 +1,94 @@
+<!--pages/type/yuyue.wxml-->
+<view class="tui-picker-content">
+	<view style="display: flex;width: 100%;height: 100rpx;border: 1px solid #eee;">
+		<text style="width: 28%;line-height: 50px;margin-left: 3%;">受访人员：</text>
+			<view>
+			  <input class="textinput" bindinput="bindinput" value="{{inputValue}}" placeholder="请输入内容" style="height: 100%;" />
+			</view>
+			
+	</view>
+	<scroll-view scroll-y="true" class="scrollview" hidden="{{hideScroll}}" style="{{arrayHeight>340?'height:340rpx':''}}">
+	  <view wx:for="{{bindSource}}">
+	    <view id="{{item}}" bindtap="itemtap" class="itemview">{{item}}</view>
+	  </view>
+	</scroll-view>
+	<view style="width: 100%;height: 100rpx;display: flex;border-bottom: 1px solid #ccc;">
+		<text style="width: 30%;line-height: 100rpx;margin-left: 3%;">开始时间：</text>
+						<pickers id="pickers" value='{{time}}' bind:onPickerChange="bindDateChange1" >
+				<view class="picker" style="font-size: 0.9rem;">
+					当前选择: {{time}}
+				</view>
+						</pickers>
+	</view>
+<!-- 	<view style="width: 100%;height: 100rpx;display: flex;border-bottom: 1px solid #ccc;">
+		<text style="width: 25%;line-height: 100rpx;margin-left: 3%;">结束时间：</text>
+		<picker mode="multiSelector" bindchange="bindMultiPickerChanges" bindcolumnchange="bindMultiPickerColumnChanges" value="{{multiIndexs}}" range="{{multiArrays}}">
+		    <input class="input_one" value='{{end_time}}' placeholder='选择结束时间'/>
+		  </picker>
+		<pickers id="pickers" bindchange="bindMultiPickerChanges" bindcolumnchange="bindMultiPickerColumnChanges" value="{{multiIndexs}}" range="{{multiArrays}}">
+			<input class="input_one" value='{{end_time}}' placeholder='选择结束时间'/>
+		</pickers>  
+	</view> -->
+	<view style="width: 100%;height: 100rpx;display: flex;border-bottom: 1px solid #ccc;">
+		<text style="width: 30%;line-height: 100rpx;margin-left: 3%;">结束时间：</text>
+						<pickers id="pickers" value='{{end_time}}'  bind:onPickerChange="bindDateChange2" >
+				<view class="picker">
+					当前选择: {{end_time}}
+				</view>
+						</pickers>
+	</view>
+<view class="page-section">
+    <view class="page-section-title">车牌号：</view>
+    <view class="textarea-wrp">
+      <textarea value="{{linse}}" bindblur="bindCarAreaBlur" auto-height placeholder="请输入车牌号"></textarea>
+    </view>
+  </view>
+  <view class="page-section">
+      <view class="page-section-title">到访人数：</view>
+      <view class="textarea-wrp">
+        <textarea value="{{come}}" bindblur="bindComeAreaBlur" auto-height placeholder="请输入到访人数"></textarea>
+      </view>
+    </view>
+  <view class="page-section">
+    <view class="page-section-title">备注：</view>
+    <view class="textarea-wrp">
+      <textarea value="{{note}}" bindblur="bindTextAreaBlur" auto-height placeholder="请输入预约详情"></textarea>
+    </view>
+  </view>
+
+  
+  <view class='btu'>
+   <button bindtap="registerShow">我要预约</button>
+  </view>
+</view>
+<!-- 添加随行人 -->
+<view class="btn-area">
+  <view class="btn-add" bindtap="addItem">
+    <text>点击添加随访人(最多只添加6个) +</text>
+	<!-- <button >+</button> -->
+  </view>
+</view>
+<view class="list">
+  <view class="form" wx:for="{{info}}" wx:key="index" >
+			  <view class="delete">
+				  <text class="xixi">随访人员\t{{index+1}}</text>
+				  <button class="buttonstyle" bindtap="deleteData" id='{{index}}'><image class="imgstyle" src="../../image/delet.png" alt=""></image></button>
+			  </view>
+				<view class="f-item">
+				  <view class="f-label">姓名</view>
+				  <input class="f-input" placeholder="请输入姓名" value="{{item.name}}" bindinput="changeInput" data-index="{{index}}" data-field="name"></input>
+				</view>
+				<view class="f-item">
+				  <view class="f-label">手机号</view>
+				  <input class="f-input" placeholder="请输入手机号" type="number" value="{{item.mobile}}" bindinput="changeInput" data-index="{{index}}" data-field="mobile" maxlength="11"></input>
+				</view>
+				<view class="f-item">
+				  <view class="f-label">身份证</view>
+				  <input class="f-input" placeholder="请输入身份证号" type="number" value="{{item.card}}" bindinput="changeInput" data-index="{{index}}" data-field="card" maxlength="18"></input>
+				</view>
+				<view class="f-item">
+				  <view class="f-label">备注</view>
+				  <input class="f-input" placeholder="请输入备注" type="text" value="{{item.word}}" bindinput="changeInput" data-index="{{index}}" data-field="word"></input>
+				</view>
+	</view>
+</view>

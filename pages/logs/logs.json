@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "受访首页",
+  "usingComponents": {
+	  "noData":"/Componet/zanwu/zanwu"
+  }
+}
